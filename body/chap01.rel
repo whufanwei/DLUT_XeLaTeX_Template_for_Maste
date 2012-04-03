@@ -1,0 +1,34 @@
+;; RefTeX parse info file
+;; File: /home/fan/下载/DLUT-git/body/chap01.tex
+;; User: fan (whufanwei)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/home/fan/下载/DLUT-git/body/")
+
+(label-numbers)
+
+(bof "/home/fan/下载/DLUT-git/body/chap01.tex")
+
+(toc "toc" "  1 模版使用说明" "/home/fan/下载/DLUT-git/body/chap01.tex" nil 1 "1" "\\chapter{模版使用说明}" 62)
+
+("chap01" "s" "\\section{个人信息} 使用模版的第一步当然是修改您的个人信息。与个人信息有关的内容位 于~{/preface/cover.tex}~文件中。对照着模版内容改就好了，没有什么难度。填 写专业、姓" "/home/fan/下载/DLUT-git/body/chap01.tex" nil)
+
+(toc "toc" "    1.1 个人信息" "/home/fan/下载/DLUT-git/body/chap01.tex" nil 2 "1.1" "\\section{个人信息}" 95)
+
+(toc "toc" "    1.2 中英文摘要、关键字" "/home/fan/下载/DLUT-git/body/chap01.tex" nil 2 "1.2" "\\section{中英文摘要、关键字}" 261)
+
+(toc "toc" "    1.3 正文" "/home/fan/下载/DLUT-git/body/chap01.tex" nil 2 "1.3" "\\section{正文}" 674)
+
+(eof "/home/fan/下载/DLUT-git/body/chap01.tex")
+))
+

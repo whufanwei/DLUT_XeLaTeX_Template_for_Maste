@@ -1,0 +1,75 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% 大连理工大学硕士论文 XeLaTeX 模版 —— 字体配置文件 fonts.tex
+% 版本：0.8
+% 最后更新：2012.04.04
+% 修改者：Yuri (E-mail: yuri_1985@163.com)
+% 修订者：whufanwei(E-mail: dutfanwei@qq.com) 
+% 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
+% 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% 英文字体设置特别推荐方案（Windows，需要安装 Adobe 字体），现代
+\usepackage{amssymb}
+\usepackage[no-math]{fontspec}
+\usepackage{amsmath}
+\usepackage[CJKnumber,CJKchecksingle,BoldFont]{xeCJK}
+\usepackage{mathspec}
+\setallmainfonts[Mapping=tex-text]{Times New Roman}
+\setallsansfonts[Mapping=tex-text]{Times New Roman}
+\setallmonofonts{Consolas}
+
+% 英文字体设置方案一（Windows，需要安装 LM10 字体），和 LaTeX 默认字体保持一致，经典
+% \usepackage{amssymb}
+% \usepackage{fontspec}
+% \usepackage{amsmath}
+% \usepackage[CJKnumber,CJKaddspaces,CJKchecksingle,BoldFont]{xeCJK}
+% \usepackage{mathrsfs}   % 一种常用于定义泛函算子的花体字母，只有大写。
+% \usepackage{bm}         % 处理数学公式中的黑斜体的宏包
+% \setmainfont{LMRoman10-Regular}
+% \setsansfont{LMSans10-Regular}
+% \setmonofont{LMMono10-Regular}
+
+% 英文字体设置方案二（Linux，使用自带 LM10 字体），和 LaTeX 默认字体保持一致，经典
+% \usepackage{fontspec}
+% \usepackage{amsmath,amssymb}
+% \usepackage[CJKnumber,CJKaddspaces,CJKchecksingle,BoldFont]{xeCJK}
+% \usepackage{mathrsfs}   % 一种常用于定义泛函算子的花体字母，只有大写。
+% \usepackage{bm}         % 处理数学公式中的黑斜体的宏包
+% \setmainfont{LMRoman10}
+% \setsansfont{LMSans10}
+% \setmonofont{LMMono10}
+
+% 英文字体设置方案三（Linux，使用自带 Nimbus 字体），和 Word 模版字体保持一致，经典
+% \usepackage{fontspec}
+% \usepackage{mathptmx}
+% \usepackage{amsmath,amssymb}
+% \usepackage[CJKnumber,CJKaddspaces,CJKchecksingle,BoldFont]{xeCJK}
+% \usepackage{mathrsfs}   % 一种常用于定义泛函算子的花体字母，只有大写。
+% \usepackage{bm}         % 处理数学公式中的黑斜体的宏包
+% \setmainfont{Nimbus Roman No9 L}
+% \setsansfont{Nimbus Sans L}
+% \setmonofont{Nimbus Mono L}
+
+% 中文字体设置，使用的是 Adobe 字体，保证了在 Adobe Reader / Acrobat 下优秀的显示效果
+\setCJKmainfont[BoldFont={Adobe Heiti Std},ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}
+\setCJKsansfont{Adobe Heiti Std}
+\setCJKmonofont{Adobe Fangsong Std}
+
+% 定义字体名称，可在此添加自定义的字体
+\setCJKfamilyfont{song}{Adobe Song Std}
+\setCJKfamilyfont{hei}{Adobe Heiti Std}
+\setCJKfamilyfont{kai}{Adobe Kaiti Std}
+\setCJKfamilyfont{fs}{Adobe Fangsong Std}
+\setCJKfamilyfont{xkai}{STXingkai}
+
+% 自动调整中英文之间的空白
+% \punctstyle{quanjiao}
+\XeTeXlinebreaklocale "zh"      %中文断行
+\XeTeXlinebreakskip = 0pt plus 1pt %1pt左右弹性间距
+% 其他字体宏包
+\usepackage{xltxtra,xunicode}

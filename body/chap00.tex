@@ -1,0 +1,183 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+\chapter*{\hfill 引　　言 \hfill}
+\addcontentsline{toc}{chapter}{引　　言}
+\label{chap00}
+
+\section{字体}
+
+可以使用Windows下的方正、华文或者中易字体，但要注意选择的字体最好是包含宋
+体、黑体、楷体和仿宋的完整套装。不过由于这些字体在PDF浏览器中的显示效果并
+不好，所以建议选用Adobe的中文字体。
+
+系统中应该安装的中文字体：
+\begin{enumerate}
+\item Adobe 楷体
+\item Adobe 黑体
+\item Adobe 宋体
+\item Adobe 仿宋
+\item 华文行楷
+\end{enumerate}
+
+系统中应该安装的英文字体：
+\begin{enumerate}
+\item Times New Roman
+\item Consolas
+\end{enumerate}
+
+\section{Windows操作系统}
+
+强烈建议下载最新版本的C\TeX{}。最新版本号为v2.9.2.164。建议选择完整版本
+下载，因为本硕士论文模板使用的某些宏包比较新。不然可能会造成编译错误。
+
+\subsection{编译运行}
+
+需要注意的是，在WinEdit中必须在每个tex文件的开始添加如下的两行：
+\begin{lstlisting}
+  % !TEX TS-program = XeLaTeX
+  % !TEX encoding = UTF-8 Unicode
+\end{lstlisting}
+否则文件会变成乱码。
+
+以本模版为例，在Windows下的编译过程是这样的：
+\begin{enumerate}
+\item 打开main.tex文件；
+\item 先点击WinEdt工具栏上的\XeLaTeX{}按钮(可能在Acrobat Reader按钮的下拉菜单
+  中)；
+\item 再点击WinEdt工具栏上的Bib\TeX{}按钮；
+\item 再点击WinEdt工具栏上的\XeLaTeX{}按钮两到三遍；
+\item 最后点击WinEdt工具栏上的Acrobat Reader按钮就可以看到输出的PDF文档了。
+\end{enumerate}
+
+
+\section{Linux操作系统(以Ubuntu为例)}
+First things first，首先的工作是安装一个合适的\XeTeX{}编译系统。这个问题
+并不难解决，现在主流的\LaTeX{}编译系统均已经包含了对\XeTeX{}的支持（包
+括xeCJK中文宏包），并不需要自己额外再进行安装。在Linux下推荐使
+用\TeX{}Live，目前最新版本为\TeX{}Live 2011。下面以在Ubuntu下的本地安装为
+例，简要的说明\TeX{}Live的安装及配置过程，高玩们请主动绕行：
+\begin{enumerate}
+\item 下载\TeX{}live 2011镜像，点
+  击\href{http://ftp.ctex.org/mirrors/CTAN/systems/texlive/Images/}{这里}进
+  入下载列表。如果你有检查文件完整性的习惯的话，这个列表还提供
+  了md5和sha256校验值；
+\item 安装perl-tk包，以便使用图形界面进行安装。在终端中输入命
+  令\texttt{\footnotesize sudo apt-get install perl-tk}；
+\item 挂载下载好的iso镜像，\texttt{\footnotesize sudo mkdir
+    /mnt/texlive}（在~{/mnt}~下创建texlive文件夹
+  ），\texttt{\footnotesize sudo mount -o loop texlive2011.iso
+    /mnt/texlive}（挂载texlive2011.iso）。进入~/mnt/texlive~目录，输入命
+  令~\texttt{\footnotesize sudo ./install-tl -gui}~之后出现图形界面。之后
+  的操作就比较简单了，可以去掉不用的语言包以节省磁盘空间，注意选择最后一
+  项Create symlinks in system directories，让安装程序自动创建语法链接。确
+  定安装，耐心等待进度条到头；
+\item 配置环境变量。在终端中输入~\texttt{\footnotesize sudo gedit
+    /etc/bash.bashrc}，在此文件末尾添加
+  \begin{lstlisting}
+    PATH=/usr/local/texlive/2011/bin/i386-linux:$PATH; export PATH
+    MANPATH=/usr/local/texlive/2011/texmf/doc/man:$MANPATH; export
+    MANPATH
+    INFOPATH=/usr/local/texlive/2011/texmf/doc/info:$INFOPATH;
+    export INFOPATH
+  \end{lstlisting}
+  % $ 
+  在~{/etc/manpath.config}~文件的~\texttt{\footnotesize\# set up PATH to
+    MANPATH mapping}~这行下面的列表后增加一条：
+  \begin{lstlisting}
+    MANPATH_MAP /usr/local/texlive/2011/bin/i386-linux
+    /usr/local/texlive/2011/texmf/doc/man
+  \end{lstlisting}
+  在~{/etc/manpath.config}~文件的~\texttt{\footnotesize\# set up PATH to
+    MANPATH mapping}~这行下面的列表后增加一条：
+  \begin{lstlisting}
+    MANPATH_MAP /usr/local/texlive/2011/bin/i386-linux
+    /usr/local/texlive/2011/texmf/doc/man
+  \end{lstlisting}
+\end{enumerate}
+至此安装过程结束。
+
+以上\TeX{}Live安装过程摘自某位筒子的博客文摘，原始链接位于wordpress空间，
+访问有问题，不
+过
+\href{http://hi.baidu.com/skubuntu/blog/item/89e8de2f73a465e08a1399a3.html}{
+  百度空间}有转载，虽然百度搜不着什么玩意。
+
+接下来我们需要安装一套中文字体，你可以使用Windows下的方正、华文或者中易字
+体，但要注意选择的字体最好是包含宋体、黑体、楷体和仿宋的完整套装。不过由
+于这些字体在PDF浏览器中的显示效果并不好，所以建议选用Adobe的中文字体。安
+装及配置过程如下：
+\begin{enumerate}
+\item 下载Adobe中文字体，点
+  击
+  \href{http://forum.ubuntu.org.cn/viewtopic.php?f=35&t=180987&start=0}{
+    这里}进入下载页面；
+\item 将下载的字体拷至~{/usr/share/fonts/truetype/adobe}~目录，如果没有请
+  以管理员身份新建；
+\item 刷新字体缓存，在终端中输入~\texttt{\footnotesize sudo fc-cache -fv }。这时，你可以通过~\texttt{\footnotesize fc-list :lang=zh-cn |sort}~命令来查看字体是否安装成功，注意fc-list后有个空格；
+\item 你可能还需要在终端中运行~\texttt{\footnotesize sudo apt-get
+    install poppler-data cmap-adobe-cns1 cmap-adobe-gb1}命令来解决Adobe中
+  文字体在PDF文件中不显示的情况。
+\end{enumerate}
+这样，我们就配置好了中文字体，当然这没什么特别的，网上教程一大把。
+
+之后我们需要一个类似于WinEdt的集成编译环境。在Ubuntu软件中心中，我们能很
+容易的安装\TeX{}maker和\TeX{}works，两者功能差不多，\TeX{}maker更强大一些。
+当然，你也可以自己配置VIM下的\LaTeX{}编译环境，在此就不赘述了。
+
+\subsection{编译运行}
+
+
+在安装并配置好编译环境之后，接下来的工作就是如何编译\XeLaTeX{}文件，生成
+所需的PDF文档了。以本模版为例，在\TeX{}works编译过程是这样的：
+\begin{enumerate}
+\item 打开main.tex文件；
+\item 将工具栏上的编译命令切换至\XeLaTeX{}后，点击运行；
+\item 再将工具栏上的编译命令切换至Bib\TeX{}后，点击运行；
+\item 再将工具栏上的编译命令切换至\XeLaTeX{}后，点击运行，这里需要运行两
+  到三遍；
+\item 如果编译没有错误，就可以看到输出的PDF文件了。
+\end{enumerate}
+
+对于\TeX{}maker，首先需要在【选项】【配置\TeX{}maker】【命令】中将第一行
+的latex改成xelatex，之后用\LaTeX{}作为\XeLaTeX{}命令执行即可，其他的和上
+面类似。
+
+\section{XeTeX简介}
+\XeTeX{}（英文发音为"zee-\TeX{}"）是一种使用Unicode的\TeX{}排版引擎，并支
+持一些现代字体技术，例如OpenType。其作者和维护者是Jonathan Kew，并以X11自
+由软件许可证发布。
+
+虽然\XeTeX{}最初只是为Mac OS X所开发，但它现在在各主要平台上都可以运作。
+它原生的支持Unicode，并默认其输入文件为UTF-8编码。\XeTeX{}可以在不进行额
+外配置的情况下直接使用操作系统中安装的字体，因此可以直接利
+用OpenType，Graphite中的高级特性，例如额外的字形，花体，合字，可变的文本
+粗细等等。\XeTeX{}提供了对OpenType中本地排版约定（locl标签）的支持，也允
+许向字体传递OpenType的元标签。它亦支持使用包含特殊数学字符的Unicode字体排
+版数学公式，例如使用Cambria Math或Asana Math字体代替传统的\TeX{}字体。
+
+
+\subsection{历史}
+2004年4月，发布了\XeTeX{}的第一个版本，这个版本只支持Mac OS X，并包括了内
+建的ATT和Unicode支持。2005年，加入了对OpenType的支持。
+在2006年Bacho\TeX{}期间，发布了第一个支持Linux的版本，并在数月后由Akira
+Kakuto移植到了Microsoft Windows上，其跨平台版本最终包含在\TeX{}Live
+2007中。另外，从2.7版开始，MiK\TeX{}也包含了\XeTeX{}。
+
+作为\TeX{}Live的一部分，\XeTeX{}支持大多数
+为\LaTeX{}，OpenType，TrueType和PostScript字体开发的宏包，而无需特别的安
+装和设定。
+
+
+\section{引言内容要求}
+以下给出研究生院对引言内容的要求，格式的要求已经嵌入到本模版中：
+\begin{enumerate}
+\item 引言包含的内容有说明论文的主题和选题的范围、对本论文研究主要范围内已有文献的评述以及
+  说明本论文所要解决的问题；
+\item 注意不要与摘要内容雷同；
+\item 建议与相关历史回顾、前人工作的文献评论、理论分析等相结合，如果引言部分省略，
+  该部分内容在正文中单独成章，标题改为绪论，用足够的文字叙述。
+\end{enumerate}
+
+\textcolor[rgb]{1.00,0.00,0.00}
+{特别注意：是否如实引用前人结果反映的是学术道德问题，应明确写出同行相近的和已取得的成果，避免抄袭之嫌。} 

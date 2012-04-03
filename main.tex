@@ -1,0 +1,95 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% 大连理工大学硕士论文 XeLaTeX 模版 —— 主文件 main.tex
+% 版本：0.8
+% 最后更新：2012.04.04
+% 修改者：Yuri (E-mail: yuri_1985@163.com)
+% 修订者：whufanwei(E-mail: dutfanwei@qq.com)
+% 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
+% 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\documentclass[12pt, a4paper, openany, twoside]{book}
+
+% 字体配置文件
+\input{setup/fonts}
+
+% 宏包配置文件
+\input{setup/packages}
+
+% 格式文件
+\input{setup/format}
+
+\begin{document}
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+% 前言
+\frontmatter
+\pagenumbering{Roman}
+\input{preface/cover}  % 封面
+\originality           % 独创性
+\makeabstract
+
+% 设置目录字体和行间距
+\defaultmenufont
+% 目录
+\tableofcontents
+\cleardoublepage
+% 插图目录
+% \listoffigures
+% 表格目录
+% \listoftables
+\cleardoublepage
+
+\defaultfont
+\mainmatter
+% 正文章节
+\defaultfont
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\include{body/chap00}
+\include{body/chap01}
+\include{body/chap02}
+\include{body/chap03}
+
+% 结论
+\include{body/conclusion}
+\cleardoublepage
+% \backmatter
+
+
+% 参考文献
+\defaultfont
+\wuhao
+\bibliographystyle{zjugbno}
+\bibliography{body/reference}
+\addcontentsline{toc}{chapter}{参考文献}
+\cleardoublepage
+% 附录
+\defaultfont
+\begin{appendix}
+  \input{appendix/chapA}
+\end{appendix}
+\cleardoublepage
+
+\defaultfont
+% 发表的文章列表
+\include{appendix/publications}
+\cleardoublepage
+% 致谢
+\include{appendix/acknowledgements}
+\cleardoublepage
+% 授权书
+\chapter*{}
+\addcontentsline{toc}{chapter}{大连理工大学学位论文版权使用授权书}
+\renewcommand{\baselinestretch}{1.61}
+\vspace{-0.48cm}
+\authorization
+\cleardoublepage
+
+\end{document}

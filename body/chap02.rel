@@ -1,0 +1,64 @@
+;; RefTeX parse info file
+;; File: /home/fan/下载/DLUT-git/body/chap02.tex
+;; User: fan (whufanwei)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache ("李秋零1999" . "李秋零 1999, 康德何以步安瑟尔谟的后尘?, 中国人民大学学报 2") ("欧进萍1991" . "欧进萍 etal. 1991, 设计用随机地震动的模型及其参数确定, 地震工程与工程振动 11:45") ("strawderman2001monte" . "Strawderman 2001, Monte Carlo methods statistical physics, Journal of the American Statistical Association 96:778") ("kelton2002simulation" . "Kelton etal. 2002, Simulation with ARENA, 3") ("braun2007first" . "Braun & Murdoch 2007, first course stat. progr. with, 25") ("欧进萍1991设计用随机地震动的模型及其参数确定" . "欧进萍 etal. 1991, 设计用随机地震动的模型及其参数确定, 地震工程与工程振动 11:45") ("欧进萍1999钢筋混凝土结构基于地震损伤性能的设计" . "欧进萍 & 何政 1999, 钢筋混凝土结构基于地震损伤性能的设计, 地震工程与工程振动 19:21") ("邓晓芒2000什么是艺术作品的本源" . "邓晓芒 2000, 什么是艺术作品的本源?——海德格尔与马克思美学思想的一个比较, 哲学研究 58") ("邓晓芒2005西方哲学史" . "邓晓芒 & 赵林 2005, 西方哲学史") ("李秋零1999康德何以步安瑟尔谟的后尘" . "李秋零 1999, 康德何以步安瑟尔谟的后尘?, 中国人民大学学报 2") ("fan2001c" . "赵煜 & 李威 2001, 广州地铁杂散电流实时监测系统设计及应用, 城市轨道交通研究 1:63") ("fan2004c" . "郝卫国 2004, 城市轨道交通杂散电流的防护, 城市轨道交通研究 7:53") ("fan2004b" . "姜长洪 etal. 2004, 输油管道腐蚀与杂散电流测量, 管道技术与设备 10"))
+
+(master-dir . "/home/fan/下载/DLUT-git/body/")
+
+(label-numbers)
+
+(bof "/home/fan/下载/DLUT-git/body/chap02.tex")
+
+(toc "toc" "  1 列表，三线表，插图，参考文献" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 1 "1" "\\chapter{列表，三线表，插图，参考文献}" 62)
+
+("chap02" "s" "\\section{列表}  如果不是搞昆虫学,那就是连着几个月记着写那本大书《文化史上德谟克利特和柏拉 图两个流派》,或者是《形态学的发展》,或者是《应用生物学中的统计方法》,再不 然是他一九五一年至" "/home/fan/下载/DLUT-git/body/chap02.tex" nil)
+
+(toc "toc" "    1.1 列表" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 2 "1.1" "\\section{列表}" 103)
+
+("sec:23" "s" "如果不是搞昆虫学,那就是连着几个月记着写那本大书《文化史上德谟克利特和柏拉 图两个流派》,或者是《形态学的发展》,或者是《应用生物学中的统计方法》,再不 然是他一九五一年至一九五二年编写的教程。几十、" "/home/fan/下载/DLUT-git/body/chap02.tex" nil)
+
+(toc "toc" "    1.2 表" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 2 "1.2" "\\section{表}" 1470)
+
+(toc "toc" "      1.2.1 三线表" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.1" "\\subsection{三线表}" 1483)
+
+(toc "toc" "      1.2.2 表格的列按小数点对齐" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.2" "\\subsection{表格的列按小数点对齐}" 4683)
+
+(toc "toc" "      1.2.3 多列三线表" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.3" "\\subsection{多列三线表}" 6579)
+
+(toc "toc" "      1.2.4 多行三线表" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.4" "\\subsection{多行三线表}" 8005)
+
+(toc "toc" "      1.2.5 宽度控制" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.5" "\\subsection{宽度控制}" 9320)
+
+(toc "toc" "      1.2.6 斜线表头" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.2.6" "\\subsection{斜线表头}" 10619)
+
+(toc "toc" "    1.3 图" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 2 "1.3" "\\section{图}" 12400)
+
+("chap02:figure" "s" "我来北京十一年，上学，上班，也积累了不少同学同事，但我一次他们的婚礼都没 有参加过。刚毕业的时候这种邀请很多，好象是种翻天覆地日新月异的见证，不怕 那些同学们伤心，我也知道人家是真心邀请的，但我真觉得" "/home/fan/下载/DLUT-git/body/chap02.tex" nil)
+
+(toc "toc" "      1.3.1 双图并列" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.3.1" "\\subsection{双图并列}" 14290)
+
+(toc "toc" "      1.3.2 两子图并列" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.3.2" "\\subsection{两子图并列}" 15636)
+
+("fig:1a" "f" "NO MATCH FOR CONTEXT REGEXP" "/home/fan/下载/DLUT-git/body/chap02.tex" nil)
+
+("fig:1b" "f" "NO MATCH FOR CONTEXT REGEXP" "/home/fan/下载/DLUT-git/body/chap02.tex" nil)
+
+(toc "toc" "    1.4 数学" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 2 "1.4" "\\section{数学}" 16761)
+
+(toc "toc" "      1.4.1 傅立叶变换" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 3 "1.4.1" "\\subsection{傅立叶变换}" 16775)
+
+(toc "toc" "    1.5 参考文献" "/home/fan/下载/DLUT-git/body/chap02.tex" nil 2 "1.5" "\\section{参考文献}" 18966)
+
+(eof "/home/fan/下载/DLUT-git/body/chap02.tex")
+))
+
