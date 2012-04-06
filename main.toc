@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.2.4}多行三线表}{12}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}宽度控制}{13}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}斜线表头}{14}{subsection.2.2.6}
-\contentsline {section}{\numberline {2.3}图}{16}{section.2.3}
+\contentsline {section}{\numberline {2.3}图}{15}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}双图并列}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}两子图并列}{18}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}数学}{20}{section.2.4}

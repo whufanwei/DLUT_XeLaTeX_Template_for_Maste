@@ -74,6 +74,7 @@
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth{},keepaspectratio]{sun.jpg}
+  \vspace{0.2cm}{}
   \bicaption[fig:sun]{图}{最左侧是太阳，向右依序为水星、金星、地球、火星、
     木星、土星、天王星与海王星}{Fig.}{Outward from the Sun, the planets
     are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and
@@ -462,6 +463,7 @@ bottom,float page,也就是就这里、页顶、页尾、浮动页 (专门放浮
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.6]{wedding.jpg}
+  \vspace{0.2cm}{}
   \bicaption[fig:wedding]{婚礼}{婚礼}{Fig.}{Wedding}
 \end{figure}
 
@@ -469,6 +471,7 @@ bottom,float page,也就是就这里、页顶、页尾、浮动页 (专门放浮
   \begin{figure}[htbp]
     \centering
     \includegraphics[scale=0.6]{wedding.jpg}
+    \vspace{0.2cm}{}
     \bicaption[fig:wedding]{ 婚礼 }{ 婚礼 }{Fig.}{Wedding}
   \end{figure}
 \end{lstlisting}
@@ -504,6 +507,7 @@ bottom,float page,也就是就这里、页顶、页尾、浮动页 (专门放浮
   \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth{},keepaspectratio]{sun.jpg}
+    \vspace{0.2cm}{}
     \bicaption[fig:sun]{ 图 }{ 最左侧是太阳，向右依序为水星、金
       星 }{Fig.}{Outward from the Sun, the planets are Mercury, Venus,
       Earth, Mars, Jupiter, Saturn, Uranus and Neptune.}
@@ -534,11 +538,13 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
   \begin{minipage}{0.4\textwidth}
     \centering
     \includegraphics[keepaspectratio]{lang.jpg}
+    \vspace{0.2cm}{}
     \bicaption[fig:lang]{图}{新郎}{Fig.}{Bridegroom}
   \end{minipage}
   \begin{minipage}{0.4\textwidth}
     \centering
     \includegraphics[keepaspectratio]{liang.jpg}
+    \vspace{0.2cm}{}
     \bicaption[fig:niang]{图}{新娘}{Fig.}{Brige}
   \end{minipage}
 \end{figure}
@@ -549,11 +555,13 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
     \begin{minipage}{0.4\textwidth}
       \centering
       \includegraphics[keepaspectratio]{lang.jpg}
+      \vspace{0.2cm}{}
       \bicaption[fig:lang]{ 图 }{ 新郎 }{Fig.}{Bridegroom}
     \end{minipage}
     \begin{minipage}{0.4\textwidth}
       \centering
       \includegraphics[keepaspectratio]{liang.jpg}
+      \vspace{0.2cm}{}
       \bicaption[fig:niang]{ 图}{ 新娘 }{Fig.}{Brige}
     \end{minipage}
   \end{figure}
@@ -589,6 +597,7 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
     \includegraphics[keepaspectratio]{ren.jpg}
     \subcaption{超人B}\label{fig:1b}
   \end{minipage}
+  \vspace{0.2cm}{}
   \bicaption[fig:judy]{图}{小超人老师}{Fig.}{Judy}
 \end{figure}
 
@@ -605,6 +614,7 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
       \includegraphics[keepaspectratio]{ren.jpg}
       \subcaption{ 超人B }
     \end{minipage}
+    \vspace{0.2cm}{}
     \bicaption[fig:judy]{ 图 }{ 小超人老师 }{Fig.}{Judy}
   \end{figure}
 \end{lstlisting}
@@ -634,6 +644,7 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth{},keepaspectratio]{VisualAudio.png}
+  \vspace{0.2cm}{}
   \bicaption[fig:boxingtu]{波形图}{波形图}{Fig.}{Wave}
 \end{figure}
 
@@ -646,6 +657,7 @@ Alan和Cher这一对从校园时代就相偎相依一直到步入婚礼的殿堂
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth{},keepaspectratio]{Partita3.png}
+  \vspace{0.2cm}{}
   \bicaption[fig:bahe]{巴赫手稿}{巴赫手稿}{Fig.}{Partita No.3}
 \end{figure}
 
@@ -734,23 +746,23 @@ Fellow英国Fellow of Royal Society的老板来给我们讲，写论文最重要
 对于参考文献[1],原先的bib文件是这样的：
 \begin{lstlisting}
   @article{ 李秋零1999 ,
-title={ 康德何以步安瑟尔谟的后尘? },
-author={ 李秋零 },
-journal={ 中国人民大学学报 },
-volume={2},
-year={1999}
-}
+    title={ 康德何以步安瑟尔谟的后尘? },
+    author={ 李秋零 },
+    journal={ 中国人民大学学报 },
+    volume={2},
+    year={1999}
+  }
 \end{lstlisting}
 
 
 但是由于是中文文献，需要增加一个语言域，就变成下列样式：
 \begin{lstlisting}
   @article{ 李秋零1999,
-title={ 康德何以步安瑟尔谟的后尘? },
-author={ 李秋零 },
-language={c},
-journal={ 中国人民大学学报 },
-volume={2},
-year={1999}
-}
+    title={ 康德何以步安瑟尔谟的后尘? },
+    author={ 李秋零 },
+    language={c},
+    journal={ 中国人民大学学报 },
+    volume={2},
+    year={1999}
+  }
 \end{lstlisting}

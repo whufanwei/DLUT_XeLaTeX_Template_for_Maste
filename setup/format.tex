@@ -205,8 +205,11 @@
 % \captionstyle{\centering}
 % \hangcaption
 \captiondelim{\hspace{1em}}
-\captionnamefont{\song\rmfamily\zhongwu\selectfont}
-\captiontitlefont{\song\rmfamily\zhongwu\selectfont}
+\captionnamefont{\zhongwu}
+\captiontitlefont{\zhongwu}
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
+
 
 \newcommand{\tablepage}[2]{\begin{minipage}{#1}\vspace{0.5ex} #2 \vspace{0.5ex}\end{minipage}}
 \newcommand{\returnpage}[2]{\begin{minipage}{#1}\vspace{0.5ex} #2 \vspace{-1.5ex}\end{minipage}}
@@ -271,22 +274,22 @@
       }
       \parbox[b][10.39cm][c]{\textwidth}
       {
-        \vspace{8.1cm}
+        \vspace{8.05cm}
         \begin{center}
           {
             \xiaosan\song
             \begin{tabular}{p{0.6cm}p{6.4em}@{\extracolsep{0.5em}}lc}
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
               ~ & 作 \hfill 者 \hfill 姓 \hfill 名：& \fixedunderlineleft[6.08cm]{\@cauthor} & \\
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
               ~ & 学 \hfill 科 \hfill 、\hfill 专 \hfill 业：& \fixedunderlineleft[6.08cm]{\@csubject} & \\
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
               ~ & 学 \hfill 号：& \fixedunderlineleft[6.08cm]{\@cauthorno} & \\
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
               ~ & 指 \hfill 导 \hfill 教 \hfill 师：& \fixedunderlineleft[6.08cm]{\@csupervisor} & \\
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
               ~ & 完 \hfill 成 \hfill 日 \hfill 期：& \fixedunderlineleft[6.08cm]{\@cdate} & \\
-              \vspace{0.18cm}
+              \vspace{-0.41cm}
             \end{tabular}
           }
         \end{center}

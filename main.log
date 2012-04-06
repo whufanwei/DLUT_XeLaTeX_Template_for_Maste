@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2012.3.30)  4 APR 2012 02:56
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2012.3.30)  6 APR 2012 14:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1135,7 +1135,7 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \TX@ftn=\toks47
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2012/01/26 v2.4j A comprehensive (SI) units package
+Package: siunitx 2012/03/23 v2.4l A comprehensive (SI) units package
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2012/02/26 v3471 LaTeX2e option processing using LaTeX3 keys
@@ -1187,132 +1187,132 @@ Variant \prop_get:NVNTF already defined; not changing it on line 365
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \DeclareBinaryPrefix with arg. spec. 'mmm' on line
-. 6955.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining document command \DeclareSIPostPower with arg. spec. 'mm' on line
-. 6958.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining document command \DeclareSIPrefix with arg. spec. 'mmm' on line
-. 6961.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining document command \DeclareSIPrePower with arg. spec. 'mm' on line
-. 6964.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining document command \DeclareSIQualifier with arg. spec. 'mm' on line
-. 6967.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining document command \DeclareSIUnit with arg. spec. 'O{}mm' on line
 . 6970.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
+. Defining document command \DeclareSIPostPower with arg. spec. 'mm' on line
+. 6973.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareSIPrefix with arg. spec. 'mmm' on line
+. 6976.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareSIPrePower with arg. spec. 'mm' on line
+. 6979.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareSIQualifier with arg. spec. 'mm' on line
+. 6982.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \DeclareSIUnit with arg. spec. 'O{}mm' on line
+. 6985.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
 . Defining document command \DeclareSIUnitWithOptions with arg. spec. 'mmm' on
-. line 6973.
+. line 6988.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \ang with arg. spec. 'o>{\SplitArgument {2}{;}}m'
-. on line 6988.
+. on line 7003.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \num with arg. spec. 'om' on line 6996.
+. Defining document command \num with arg. spec. 'om' on line 7011.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \numlist with arg. spec. 'o>{\SplitList {;}}m' on
-. line 7004.
+. line 7019.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \numrange with arg. spec. 'omm' on line 7012.
+. Defining document command \numrange with arg. spec. 'omm' on line 7027.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \SIlist with arg. spec. 'o>{\SplitList {;}}mm' on
-. line 7023.
+. line 7038.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \SIrange with arg. spec. 'ommm' on line 7034.
+. Defining document command \SIrange with arg. spec. 'ommm' on line 7049.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \SI with arg. spec. 'omom' on line 7045.
+. Defining document command \SI with arg. spec. 'omom' on line 7060.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \sisetup with arg. spec. 'm' on line 7048.
+. Defining document command \sisetup with arg. spec. 'm' on line 7063.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \tablenum with arg. spec. 'om' on line 7060.
+. Defining document command \tablenum with arg. spec. 'om' on line 7075.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \si with arg. spec. 'om' on line 7071.
+. Defining document command \si with arg. spec. 'om' on line 7086.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_num:w with arg. spec. 'om' on
-. line 7115.
+. line 7130.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_numrange:w with arg. spec. 'omm'
-. on line 7117.
+. on line 7132.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_SI:w with arg. spec. 'omom' on
-. line 7119.
+. line 7134.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_SIlist:w with arg. spec. 'omm'
-. on line 7121.
+. on line 7136.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_SIrange:w with arg. spec. 'ommm'
-. on line 7123.
+. on line 7138.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \siunitx_bookmark_si:w with arg. spec. 'om' on
-. line 7124.
+. line 7139.
 .................................................
 \g_ior_internal_ior=\read2
 (/usr/local/texlive/2011/texmf-dist/tex/latex/beamer/translator/translator.sty
@@ -1715,10 +1715,10 @@ Dictionary: translator-basic-dictionary, Language: English
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviati
 ons.cfg
-File: siunitx-abbreviations.cfg 2012/01/26 v2.4j siunitx: Abbreviated units
+File: siunitx-abbreviations.cfg 2012/03/23 v2.4l siunitx: Abbreviated units
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/siunitx/config/siunitx-binary.cfg
-File: siunitx-binary.cfg 2012/01/26 v2.4j siunitx: Binary units
+File: siunitx-binary.cfg 2012/03/23 v2.4l siunitx: Binary units
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -2167,10 +2167,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32696 strings out of 494142
- 629891 string characters out of 3152841
- 703823 words of memory out of 3000000
- 35289 multiletter control sequences out of 15000+200000
+ 32699 strings out of 494142
+ 629979 string characters out of 3152841
+ 705864 words of memory out of 3000000
+ 35292 multiletter control sequences out of 15000+200000
  32695 words of font info for 253 fonts, out of 3000000 for 9000
  1018 hyphenation exceptions out of 8191
  61i,16n,122p,872b,2378s stack positions out of 5000i,500n,10000p,200000b,50000s
