@@ -26,7 +26,8 @@
 \contentsline {subsection}{\numberline {2.3.1}双图并列}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}两子图并列}{19}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}数学}{20}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}傅立叶变换}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}math}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}傅立叶变换}{20}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}参考文献}{22}{section.2.5}
 \contentsline {chapter}{\numberline {3}注意事项}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}存在的问题}{24}{section.3.1}

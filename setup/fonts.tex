@@ -14,14 +14,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % 英文字体设置特别推荐方案（Windows，需要安装 Adobe 字体），现代
-\usepackage{amssymb}
-\usepackage[no-math]{fontspec}
-\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{xltxtra,xunicode}
 \usepackage[CJKnumber,CJKchecksingle,BoldFont]{xeCJK}
-\usepackage{mathspec}
-\setallmainfonts[Mapping=tex-text]{Times New Roman}
-\setallsansfonts[Mapping=tex-text]{Arial} 
-\setallmonofonts{Consolas}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% \usepackage{mathspec}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setsansfont[Mapping=tex-text]{Arial} 
+\setmonofont{Consolas}
+% \setmathfont{Times New Roman}
+
+
 
 % 英文字体设置方案一（Windows，需要安装 LM10 字体），和 LaTeX 默认字体保持一致，经典
 % \usepackage{amssymb}
@@ -72,4 +76,3 @@
 \XeTeXlinebreaklocale "zh"      %中文断行
 \XeTeXlinebreakskip = 0pt plus 1pt %1pt左右弹性间距
 % 其他字体宏包
-\usepackage{xltxtra,xunicode}
