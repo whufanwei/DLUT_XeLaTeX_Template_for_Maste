@@ -4,8 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 
 % 大连理工大学硕士论文 XeLaTeX 模版 —— 宏包配置文件 packages.tex
-% 版本：0.8
-% 最后更新：2012.04.04
+% 版本：0.82
+% 最后更新：2012.05.07
 % 修改者：Yuri (E-mail: yuri_1985@163.com)
 % 修订者：whufanwei(dutfanwei@qq.com) 
 % 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
@@ -18,12 +18,10 @@
 \usepackage[sf]{titlesec}                        % 控制标题的宏包
 \usepackage{titletoc}                            % 控制目录的宏包
 \usepackage{fancyhdr}                            % 自定义页眉页脚
-% \usepackage{fancyref}                            % 引用链接属性
 \usepackage[perpage,symbol]{footmisc}            % 脚注控制
 \usepackage{layouts}                             % 打印当前页面格式的宏包
 \usepackage{paralist}                            % 一种换行不缩进的列表格式，asparaenum,inparaenum 等
 \usepackage[shortlabels]{enumitem}               % 列表格式
-\setlist[enumerate]{(1),itemsep=-5pt,topsep=0mm,labelindent=\parindent,leftmargin=*}
 \usepackage{fancyvrb}                            % 原样输出
 \usepackage[amsmath,thmmarks,hyperref]{ntheorem} % 定理类环境宏包
 \usepackage{type1cm}                             % 控制字体的大小
@@ -34,7 +32,7 @@
 \usepackage{diagbox}    % 斜线表头
 \usepackage{tabularx}   % 表格折行
 \usepackage{siunitx}    % 国际单位，小数点对齐
-\sisetup{inter-unit-product = { }\cdot{ }} 
+% \sisetup{inter-unit-product = { }\cdot{ }} 
 
 % 参考文献
 
@@ -76,13 +74,10 @@ breaklinks=true,
 CJKbookmarks=true,
 ]{hyperref}
 
-
+% 参考文献
 \usepackage[numbers,sort&compress,square,super]{natbib} %参考文献
 \usepackage{hypernat}
 \usepackage{bibentry}
-\addtolength{\bibsep}{-0.5em}              % 缩小参考文献间的垂直间距
-\setlength{\bibhang}{2em}
-\bibpunct{[}{]}{,}{s}{}{}
 
 
 

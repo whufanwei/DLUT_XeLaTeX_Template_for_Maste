@@ -29,6 +29,8 @@
 \contentsline {subsection}{\numberline {2.4.1}傅立叶变换}{20}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}参考文献}{22}{section.2.5}
 \contentsline {chapter}{\numberline {3}注意事项}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}存在的问题}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}将来的工作}{24}{section.3.2}
 \contentsline {chapter}{结　　论}{25}{chapter*.5}
 \contentsline {chapter}{参考文献}{27}{chapter*.6}
 \contentsline {chapter}{附录\nobreakspace {}A　附录内容名称}{29}{appendix*.7}

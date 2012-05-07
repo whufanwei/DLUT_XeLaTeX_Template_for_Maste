@@ -3,12 +3,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 
-%	大连理工大学硕士论文 XeLaTeX 模版 —— 格式文件 format.tex
-%	版本：0.71
-%	最后更新：2010.12.22
-%	修改者：Yuri (E-mail: yuri_1985@163.com)
-%	编译环境：Ubuntu 10.04 + TeXLive 2010 + TeXworks
-% Windows XP SP3 + CTeXLive 2009 + WinEdt 5.6
+% 大连理工大学硕士论文 XeLaTeX 模版 —— 格式配置文件 format.tex
+% 版本：0.82
+% 最后更新：2012.05.07
+% 修改者：Yuri (E-mail: yuri_1985@163.com)
+% 修订者：whufanwei(E-mail: dutfanwei@qq.com)
+% 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
+% 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
@@ -117,13 +118,13 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 % 设置章、节、小节、小小节的间距
-\titleformat{\chapter}[hang]{\normalfont\xiaosan\hei\sf}{\xiaosan\thechapter}{10pt}{\xiaosan}
+\titleformat{\chapter}[hang]{\normalfont\xiaosan\hei\sf}{\xiaosan\thechapter}{1em}{\xiaosan}
 \titlespacing{\chapter}{0pt}{-3ex  plus .1ex minus .2ex}{3.3ex}
-\titleformat{\section}[hang]{\sihao\hei\sf}{\sihao\thesection}{0.5em}{}{}
+\titleformat{\section}[hang]{\sihao\hei\sf}{\sihao\thesection}{1em}{}{}
 \titlespacing{\section}{0pt}{0.5em}{0.5em}
-\titleformat{\subsection}[hang]{\xiaosi\hei\sf}{\xiaosi\thesubsection}{0.5em}{}{}
+\titleformat{\subsection}[hang]{\xiaosi\hei\sf}{\xiaosi\thesubsection}{1em}{}{}
 \titlespacing{\subsection}{0pt}{0.5em}{0.3em}
-\titleformat{\subsubsection}[hang]{\hei\sf}{\thesubsubsection}{0.5em}{}{}
+\titleformat{\subsubsection}[hang]{\hei\sf}{\thesubsubsection}{1em}{}{}
 \titlespacing{\subsubsection}{0pt}{0.3em}{0pt}
 % 缩小目录中各级标题之间的缩进
 \dottedcontents{chapter}[0.32cm]{\vspace{0.2em}}{1.0em}{5pt}
@@ -173,7 +174,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 列表环境设置
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% \let\orig@Itemize =\itemize
+\setlist[enumerate]{(1),itemsep=-5pt,topsep=0mm,labelindent=\parindent,leftmargin=*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 国际单位，以点连接。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\sisetup{inter-unit-product = { }\cdot{ }} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 参考文献的处理
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% \addtolength{\bibsep}{-0.5em}              % 缩小参考文献间的垂直间距
+\setlength{\bibhang}{2em}
+\bibpunct{[}{]}{,}{s}{}{}
+
+
+
+% \let\orig@Itemize =\itemize     
 % \let\orig@Enumerate =\enumerate
 % \let\orig@Description =\description
 
