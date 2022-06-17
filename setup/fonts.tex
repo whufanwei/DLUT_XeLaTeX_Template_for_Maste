@@ -16,7 +16,8 @@
 % 英文字体设置特别推荐方案（Windows，需要安装 Adobe 字体），现代
 \usepackage{fontspec}
 \usepackage{xltxtra,xunicode}
-\usepackage[CJKnumber,CJKchecksingle,BoldFont]{xeCJK}
+\usepackage[CJKchecksingle,BoldFont]{xeCJK} % 新版本xeCJK已经不支持CJKnumber这个option，所以\CJKnumber这个命令被放到了CJKnumb这个包中,所以使用宏包CJKnumb
+\usepackage{CJKnumb}
 \usepackage{amsmath}
 \usepackage{amssymb}
 % \usepackage{mathspec}

@@ -33,4 +33,9 @@ Max进行了一点点修改，联系方式：zzgdar@163.com
 * 添加伪代码示例
 * 添加gitignore文件
 
+使用texlive 20220321和texstudio 4.2.3 QT5版本测试通过，只剩一些无所谓的警告。
+
+
+
+
 
