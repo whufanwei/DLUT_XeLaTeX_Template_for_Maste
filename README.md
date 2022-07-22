@@ -1,6 +1,10 @@
 # 大连理工大学硕士LaTeX模板 
 ==========
 
+## 管理员安装以下字体：
+百度云链接: [字体](https://pan.baidu.com/s/1CPZnRri3Rhy98HtJBvbxKw?pwd=tx4s) 提取码: tx4s 
+
+
 历史 
 ----------
 
