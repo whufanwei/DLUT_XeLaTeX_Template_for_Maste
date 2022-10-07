@@ -1,7 +1,7 @@
-﻿% !TEX TS-program = XeLaTeX
+% !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 
-\chapter{列表，三线表，插图，参考文献}
+\chapter{列表，三线表，伪代码，插图，参考文献}
 \label{chap02}
 
 \section{列表}
@@ -458,6 +458,50 @@ bottom,float page,也就是就这里、页顶、页尾、浮动页 (专门放浮
     \end{tabular}
   \end{table}
 \end{lstlisting}
+
+\section{伪代码}
+
+这里用的是algorithm2e宏包，下面是物质点法的伪代码，读者可以参考。
+
+\begin{algorithm}[htbp]
+	\caption{物质点法伪代码}\label{MPMalgorithm} 	
+	\KwIn{Discrete material points}
+	\SetKwBlock{Begin}{Initialization}{end}
+	\Begin{
+		Set up Eulerian grid, set time t = 0;\\
+		Set up particle data : $\mathbf{x}_{p}^{0}$,$\mathbf{v}_{p}^{0}$,$V_{p}^{0}$,$m_{p}$,$\boldsymbol{\sigma}_{p}^{0},\mathbf{F}_{p}^0,\mathbf{b}_{p}^{0}$  
+	}
+	
+	\While{$t < t_{f}$}{
+		\textbf{Compute shape and gradient shape functions :} $N_{I}$,$\nabla N_{I}$ \\
+		\textbf{Reset grid :} $m_{I}^{t} = 0$, $(m\mathbf{v})_{I}^{t} = \mathbf{0}$, $\mathbf{f}_{I}^{ext,t} = \mathbf{0}$, $\mathbf{f}_{I}^{int,t} = \mathbf{0}$ 
+		
+		\SetKwBlock{Begin}{Mapping from particles to nodes(P2G) :}{end}
+		\Begin{
+			Compute nodal mass : $m_{I}^{t}=\sum_{p} N_{ I}\left(\mathbf{x}_{p}^{t}\right) m_{p}$	\\
+			Compute nodal momentum : $(m\mathbf{v})_{I}^{t}=\sum_{p} N_{ I}\left(\mathbf{x}_{p}^{t}\right) (m\mathbf{v})_{p}^{t}$	\\
+			Compute external force : $\mathbf{f}_{I}^{ext,t}=\sum_{p} N_{I}\left(\mathbf{x}_{J}^{t}\right) m_{p} \mathbf{b}_{p}^{t}$	\\
+			Compute internal force : $\mathbf{f}_{I}^{int,t}=- \sum_{p} V_{p}^{t} \boldsymbol{\sigma}_{p}^{t} \nabla N_{I} \left(\mathbf{x}_{p}^{t}\right)$ \\
+			Compute nodal force : $\mathbf{f}_{I}^{t} = \mathbf{f}_{I}^{ext,t} + \mathbf{f}_{I}^{int,t}$	\\
+		}
+		\textbf{Update nodal momenta :} $(m \mathbf{v})_{I}^{t+\Delta t}=(m \mathbf{v})_{I}^{t}+\mathbf{f}_{I}^{t} \Delta t$	\\
+		\textbf{Fix Dirichlet nodes $I$ :} $(m \mathbf{v})_{I}^{t+\Delta t}=\mathbf{0}$ and $\mathbf{f}_{I}^{t}=\mathbf{0}$	\\
+		
+		\SetKwBlock{Begin}{Update particles(G2P) :}{end}
+		\Begin{
+			Update particle velocities : $\mathbf{v}_{p}^{t+\Delta t}=\mathbf{v}_{p}^{t}+\Delta t \sum_{I} N_{I}\left(\mathbf{x}_{p}^{t}\right) \mathbf{f}_{I}^{t} / m_{I}^{t}$	\\
+			Update particle positions :	$\mathbf{x}_{p}^{t+\Delta t}=\mathbf{x}_{p}^{t}+\Delta t \sum_{I} N_{I}\left(\mathbf{x}_{p}^{t}\right)(m \mathbf{v})_{I}^{t+\Delta t} / m_{I}^{t}$	\\
+			Get nodal velocities : $\mathbf{v}_{I}^{t+\Delta t}=(m \mathbf{v})_{I}^{t+\Delta t} / m_{I}^{t}$			\\		
+		}
+		\SetKwBlock{Begin}{Update stresses :}{end}
+		\Begin{
+			Compute gradient velocity : $\mathbf{L}_{p}^{t+\Delta t}=\sum_{I} \nabla N_{I}\left(\mathbf{x}_{p}^{t}\right) \mathbf{v}_{I}^{t+\Delta t}$\\
+			Updated gradient deformation tensor : $\mathbf{F}_{p}^{t+\Delta t}=\left(\mathbf{I}+\mathbf{L}_{p}^{t+\Delta t} \Delta t\right) \mathbf{F}_{p}^{t}$\\
+			Update volume : $\mathbf{V}_{p}^{t+\Delta t}=\operatorname{det} \left( \mathbf{F}_{p}^{t+\Delta t} \right) V_{p}^{0}$\\
+			Update stresses : $\boldsymbol{\sigma}_{p}^{t+\Delta t}=\boldsymbol{\sigma}_{p}^{t}+\Delta \boldsymbol{\sigma}_{p}$
+		}
+	}
+\end{algorithm}
 
 
 \section{图}
